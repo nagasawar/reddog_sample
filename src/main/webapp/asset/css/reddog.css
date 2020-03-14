@@ -1,0 +1,93 @@
+/* ==========================================================================
+ jQueryプラグインで使用するCSSを定義
+ ========================================================================== */
+
+/* hoverListで使用 */
+.rd-hover-cursor { cursor: hand; cursor: pointer; }
+.rd-hover-color,.rd-hover-color td { background-color: #ffffcc; }
+.rd-hover-color td.rd-hover-color-cell { background-color: #f6e26a; }
+
+/* hoverListオプション */
+.rd-hover-color-sort { background-color: #eeeeee; }
+.rd-hover-color-ky { background-color: #eeeeee; }
+
+/* listSelectedで使用 */
+.rd-layout-list-selected { background-color: #f7db5e; }
+
+/* sortableで使用 */
+.rd-sort-list-hilight td { border:1px dotted blue; }
+.rd-sort-list-hilight { background-color: #afeeee; height: 5px; }
+
+/* textReadonlyで使用 */
+input.rd-readonly-style { background-color: #eeeeee; color: #666666; }
+
+/* モーダルウィンドウ内のリスト用スタイル */
+.rd-modal-list { background-color: #f7f7f7; border-collapse:collapse; border-spacing:0; font-size: 0.9em; width: 100%; margin-bottom: 5px; }
+.rd-modal-list th { background-color: #dad5bc; border: 1px solid #bbbbbb; padding: 3px 5px; word-break: break-all; white-space: normal; }
+.rd-modal-list td { border: 1px solid #bbbbbb; padding: 3px 5px; word-break: break-all; white-space: normal; }
+
+/* モーダルウィンドウ内の検索条件スタイル */
+.rd-modal-conditions { background-color: #f7f7f7; border-collapse:collapse; border-spacing:0; font-size: 0.9em; width: 100%; margin-bottom: 5px; }
+.rd-modal-conditions th { background-color: #dad5bc; border: 1px solid #bbbbbb; padding: 3px 5px; text-align: left; word-break: break-all; white-space: normal; }
+.rd-modal-conditions td { border: 1px solid #bbbbbb; padding: 3px 5px; word-break: break-all; white-space: normal; }
+
+/* Ajax通信中 ロード表示 */
+div.rd-ajax-loading { background:url(images/loader.gif); background-position: center center; background-repeat: no-repeat; height:32px; width: 100%; }
+span.rd-ajax-loading { background:url(images/loader.gif); background-position: center center; background-repeat: no-repeat; padding: 0 16px; }
+
+/* Ajax処理メッセージ */
+.rd-ajax-success { color: green; font-weight: bold; }
+.rd-ajax-error { color: crimson; font-weight: bold; }
+
+/* モーダルウィンドウのスタイル上書き */
+.ui-dialog { font-size: 1em; }
+
+/* CSV出力項目チェックボックス レイアウト */
+#rd-csv-check-item #banner { background-image: none; color: #3E7800; font-size: 14px; font-weight: bold; height: 27px; line-height: 27px; margin: 0 10px; padding: 0; }
+#rd-csv-check-item .subtitle { background: none repeat scroll 0 0 #E9F5CD; color: #3E7800; font-size: 14px; font-weight: bold; line-height: 1; margin-bottom: 3px; padding: 8px 10px 8px 20px; }
+#rd-csv-check-item .subtitle.htop { margin-top: 0px; }
+#rd-csv-check-item ul li { list-style-type: none; display: block; float: left; line-height: 18px; padding: 0; position: relative; width: 25%; }
+#rd-csv-check-item ul li label { display: block; padding: 3px 10px 3px 0; }
+
+/* 職員ID重複チェック */
+span.rd-uniq-staff-ng { color: crimson; font-weight: bold; margin-left: 10px; }
+span.rd-uniq-staff-ok { color: green; font-weight: bold; margin-left: 10px; }
+
+/* dataTable用スタイル */
+.rd-dataTableStyle { border-bottom: solid 1px #888888 !important; }
+.rd-dataTableStyle tr.odd { background-color: #f7f7f9; }
+.rd-dataTableStyle tr th { white-space: pre; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+  /* ヘッダー部分の調整 */
+.rd-dataTableStyle thead tr th { border-right: solid 1px #cccccc !important; padding: 6px 18px 3px 10px !important; }
+.rd-dataTableStyle thead tr th.ui-state-default:first-child { border-left: solid 1px #cccccc !important; }
+
+  /* ボディ部分の調整 */
+.rd-dataTableStyle tbody tr td { padding: 5px 10px !important; }
+
+.dataTables_length { float: left; width: 300px; }
+.dataTables_length select { background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; color: #555; font-size: 14px; height: 30px; line-height: 30px; padding: 6px 12px; transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; }
+.dataTables_length select:focus { border-color: #66afe9; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6); outline: 0 none; }
+
+.dataTables_filter { float: right; }
+.dataTables_filter input { background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; color: #555; font-size: 14px; height: 30px; line-height: 30px; padding: 6px 12px; transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; }
+.dataTables_filter input:focus { border-color: #66afe9; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6); outline: 0 none; }
+
+/*
+ *  dateickerカレンダーをテキストボックスの横に並べるスタイル
+ *  datepickerのテキストの親要素divにつける
+ */
+div.rd-datepicker-text { white-space: nowrap; }
+div.rd-datepicker-text input { margin-right: 5px; display: inline; }
+
+/* コンボボックスの矢印のスタイル */
+.rd-combobox-arrow { background-image: none; cursor: pointer; text-decoration: none; padding-left: 5px; vertical-align: middle; outline: none; }
+.rd-combobox-arrow:hover { text-decoration: none; outline: none; }
+
+/* テーブルレイアウトのform枠 */
+.rd-form-table th { padding: 6px; text-align: right; white-space: nowrap; }
+.rd-form-table td { padding: 6px; }
+.rd-form-table tr.center { text-align: center; }
+
+/* javascript入力チェックで表示されるエラーメッセージ */
+div.rd-js-error-msg { color: #a94442; }

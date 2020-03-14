@@ -1,0 +1,37 @@
+-- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
+--
+-- Host: localhost    Database: human_resources
+-- ------------------------------------------------------
+-- Server version	5.5.47
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `rd_users`
+--
+
+LOCK TABLES `rd_users` WRITE;
+/*!40000 ALTER TABLE `rd_users` DISABLE KEYS */;
+INSERT INTO `rd_users` VALUES (15,'test1','test1','一般ユーザA','5'),(31,'test1212','test1212','顧客一郎','0'),(43,'test0044','test0044','テスト0044','1'),(44,'test0055','test0055','テスト0055','0'),(45,'test0066','test0066','テスト0066','5'),(49,'test012','test012','テスト012','0'),(53,'test1199','test1199','テスト1199','0'),(54,'admin','admin','管理者ユーザ','9'),(55,'test1111','test1111','test1111','0'),(56,'test99999','test99999','テスト99999','5'),(58,'test01234321','test01234321','test01234321','9'),(60,'test0033','test0033','テスト0033','5'),(61,'test0022','test0022','test0022','1');
+/*!40000 ALTER TABLE `rd_users` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-04-17 14:39:28

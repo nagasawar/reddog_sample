@@ -1,0 +1,66 @@
+package reddog_sample.util.helper.handsonTable;
+
+public class [class] extends HandsonTableData {
+
+    // @columnDefine ----------------------------------------------------
+    @Override
+    public void setHtColumns(HandsonTableBuilder htBuilder) {
+
+        HandsonTableColumn hc;
+
+        hc = new HandsonTableColumn("列名1", JSON_KEY_xxxx);
+        htBuilder.addHtColumn(hc);
+
+        hc = new HandsonTableColumn("列名2", JSON_KEY_xxxx);
+        htBuilder.addHtColumn(hc);
+    }
+
+    // @jsonkey ---------------------------------------------------------
+    private final String JSON_KEY_xxxx = "xxxx";
+
+    // @properties ------------------------------------------------------
+    private String xxxx;
+
+    // @valid -----------------------------------------------------------
+    private boolean validxxxx = false;
+
+    // @set methods -----------------------------------------------------
+    @Override
+    public void setProperties(Model model) {
+        [model] mmmm = ([model]) model;
+
+        this.xxxx = mmmm.getName();
+    }
+
+    @Override
+    public void setProperties(JSONObject json) {
+
+        this.xxxx = (String) json.get(JSON_KEY_xxxx);
+    }
+
+    @Override
+    protected void setJsonMap(Map<String, String> map) {
+
+        map.put(JSON_KEY_xxxx,  this.xxxx);
+    }
+
+    @Override
+    protected boolean[] getValidArray() {
+
+        return new boolean[] {
+                this.validxxxx,
+        };
+    }
+
+    // @save -----------------------------------------------------------
+    @Override
+    public void save() {
+    }
+
+    // @validate ------------------------------------------------------
+    @Override
+    protected String validCore(String errMsg) {
+
+        return errMsg;
+    }
+}

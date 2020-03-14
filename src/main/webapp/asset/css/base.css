@@ -1,0 +1,31 @@
+body,
+.ui-widget,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+/*
+    font-family:  "ƒqƒ‰ƒMƒmŠpƒS ProN W3", "Hiragino Kaku Gothic ProN", "ŸàƒSƒVƒbƒN", YuGothic, "ƒƒCƒŠƒI", Meiryo, sans-serif;
+    font-family: "YuGothic", "ŸàƒSƒVƒbƒN‘Ì", "Yu Gothic", "ŸàƒSƒVƒbƒN";
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "ƒƒCƒŠƒI", Meiryo, "‚l‚r ‚oƒSƒVƒbƒN", Helvetica, Arial, Verdana, sans-serif;
+*/
+    font-family: gTimes New Romanh, gŸà–¾’©h, YuMincho, gƒqƒ‰ƒMƒm–¾’© ProN W3h, gHiragino Mincho ProNh, gƒƒCƒŠƒIh, Meiryo, serif;
+}
+
+.mark-required { color: #b94a48; }
+.container { width: 90%; }
+
+/* handsonTable ƒXƒ^ƒCƒ‹ã‘‚« start -------------------------------------- */
+#error-display-link { background-color: #ffff91; color: #a94442; }
+#error-summary { color: #a94442; }
+/* handsonTable ƒXƒ^ƒCƒ‹ã‘‚« end ---------------------------------------- */
+
+/* jquery ui ƒXƒ^ƒCƒ‹ã‘‚« start -------------------------------------- */
+/* ƒ_ƒCƒAƒƒO•\¦‚Ì”wŒiF */
+.ui-widget-overlay { background: #000000 none repeat scroll 0 0; opacity: 0.5; }
+/* jquery ui ƒXƒ^ƒCƒ‹ã‘‚« end ---------------------------------------- */
+
+
+/* twitter bootstrap ƒXƒ^ƒCƒ‹ã‘‚« start -------------------------------------- */
+.form-group label { white-space: nowrap; }
+/* twitter bootstrap ƒXƒ^ƒCƒ‹ã‘‚« end ---------------------------------------- */

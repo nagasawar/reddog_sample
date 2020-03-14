@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//SEASAR//DTD S2Container 2.4//EN"
+    "http://www.seasar.org/dtd/components24.dtd">
+<components>
+  <include path="convention.dicon"/>
+  <include path="aop.dicon"/>
+  <include path="j2ee.dicon"/>
+  <include path="s2jdbc.dicon"/>
+  <component name="actionMessagesThrowsInterceptor" class="org.seasar.struts.interceptor.ActionMessagesThrowsInterceptor"/>
+
+  <component name="actionLogInterceptor"     class="reddog_sample.util.interceptor.ActionLogInterceptor"/>
+  <component name="tokenSaveInterceptor"     class="reddog_sample.util.interceptor.TokenSaveInterceptor"/>
+  <component name="tokenCheckInterceptor"    class="reddog_sample.util.interceptor.TokenCheckInterceptor"/>
+  <component name="ajaxCheckInterceptor"     class="reddog_sample.util.interceptor.AjaxCheckInterceptor"/>
+  <component name="postCheckInterceptor"     class="reddog_sample.util.interceptor.PostCheckInterceptor"/>
+  <component name="pageAuthCheckInterceptor" class="reddog_sample.util.interceptor.PageAuthCheckInterceptor"/>
+</components>

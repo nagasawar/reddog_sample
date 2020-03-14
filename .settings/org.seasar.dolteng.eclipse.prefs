@@ -1,0 +1,8 @@
+DaoType=S2JDBC
+DefaultResourcePath=/sample/src/main/resources
+DefaultRootPackage=reddog_sample
+DefaultSrcPath=/sample/src/main/java
+ServletPath=sample
+ViewType=SA-Struts
+WebContentsRoot=src/main/webapp
+eclipse.preferences.version=1

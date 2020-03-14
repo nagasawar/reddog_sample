@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="employeeList" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2e084271-77cf-460c-90c9-e6f10d6a6e1b">
+	<property name="ireport.zoom" value="1.9487171000000014"/>
+	<property name="ireport.x" value="14"/>
+	<property name="ireport.y" value="0"/>
+	<import value="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<style name="defStyle" isDefault="true" fontName="ＭＳ 明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H">
+		<box leftPadding="5"/>
+	</style>
+	<style name="defStyleT" backcolor="#ECFBEC" hAlign="Center" vAlign="Middle" fontName="ＭＳ 明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+	<style name="defStyleC" hAlign="Center" vAlign="Middle" fontName="ＭＳ 明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+	<parameter name="subReport_employee" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="nowDate" class="java.lang.String" isForPrompting="false"/>
+	<field name="employees" class="java.util.List"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="20" uuid="00ce9831-c47f-4238-a040-80ab079acb40"/>
+				<textElement textAlignment="Center">
+					<font fontName="ＭＳ 明朝" size="18" isBold="true" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[社員一覧]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="20" width="53" height="13" uuid="1f01c465-125e-4af0-a6f2-fc71c4866f2b"/>
+				<textElement textAlignment="Right">
+					<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[作成日：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="488" y="20" width="67" height="13" uuid="6b9723c5-fa86-48d9-9377-4df8dca142a7"/>
+				<textElement>
+					<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nowDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="76" height="20" backcolor="#CCCCCC" uuid="5c42cbe1-28a7-4f5d-9d66-d62d6d86d1ff"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ 明朝" isBold="true" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[社員ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="76" y="0" width="100" height="20" backcolor="#CCCCCC" uuid="22298d5f-9dc3-4327-83f0-cebe9f9c0001"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ 明朝" isBold="true" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[氏名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="176" y="0" width="130" height="20" backcolor="#CCCCCC" uuid="26c4a5fc-f47a-4f9b-ac83-694314959811"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ 明朝" isBold="true" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[所属]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="306" y="0" width="100" height="20" backcolor="#CCCCCC" uuid="35313e1f-8099-4d40-b79c-082e98434b9c"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ 明朝" isBold="true" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[性別]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="406" y="0" width="149" height="20" backcolor="#CCCCCC" uuid="b7816d72-2808-4fe5-9a9a-b073045728af"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ 明朝" isBold="true" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[生年月日]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="17" splitType="Stretch">
+			<subreport>
+				<reportElement key="subreport-1" style="defStyle" mode="Transparent" x="0" y="0" width="555" height="17" uuid="c203c458-4454-47fe-ac99-0dfe3791b8bb"/>
+				<dataSourceExpression><![CDATA[new JRBeanCollectionDataSource($F{employees})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{subReport_employee}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+</jasperReport>
